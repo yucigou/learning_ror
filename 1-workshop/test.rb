@@ -15,3 +15,8 @@ puts week.days.first.name	# Sunday
 puts year.number  # 2017
 puts year.weeks.first.number # 1
 puts year.weeks.first.days.first.name #Sun
+
+puts Day::NAMES
+
+# Raise an exception
+day = Day.new(0)
