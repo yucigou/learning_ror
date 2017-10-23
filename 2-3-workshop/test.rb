@@ -1,5 +1,4 @@
-require './day.rb'
-# require_relative 'day'
+require_relative 'day'
 require_relative 'week'
 require_relative 'year'
 
