@@ -8,4 +8,3 @@ class HelloWorld
   end
 end
 
-HelloWorld.new('Yuci').say_hi()
