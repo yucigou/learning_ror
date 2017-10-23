@@ -20,3 +20,8 @@ require_relative 'year'
   puts "Number of sundays: #{year.number_of_sundays}"
   puts "Number of saturdays: #{year.number_of(7)}"
 end
+
+day1 = Day.new(3)
+day2 = Day.new(5)
+
+puts day1 == day2

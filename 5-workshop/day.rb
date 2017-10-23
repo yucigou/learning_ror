@@ -10,4 +10,8 @@ class Day
     @number = number
     @name = NAMES[number]
   end
+
+  def ==(another)
+    @number == another.number
+  end
 end
