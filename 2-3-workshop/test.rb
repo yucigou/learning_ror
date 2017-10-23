@@ -1,22 +1,33 @@
 require_relative 'day'
-require_relative 'week'
 require_relative 'year'
 
-day = Day.new(3)
-week = Week.new(44)
-year = Year.new(2017)
+puts "===== Year 2016 ====="
+year = Year.new(2016, 6)
 
-puts day.name 	 # Tuesday
-puts day.number # 3
+puts 'First day: ' + Day::NAMES[year.days.first]
+puts 'Last day : ' + Day::NAMES[year.days.last]
+puts year.days.length
 
-puts week.number 	# 44
-puts week.days.first.name	# Sunday
+=begin
+all_days = ' '
+year.days.each do |day|
+  # puts day.to_s#.join(' ')
+  all_days += day.to_s
+  all_days += ' '
+end
 
-puts year.number  # 2017
-puts year.weeks.first.number # 1
-puts year.weeks.first.days.first.name #Sun
+puts all_days
+=end
+puts "===== Year 2017 ====="
+year = Year.new(2017, 1)
 
-puts Day::NAMES
+puts 'First day: ' + Day::NAMES[year.days.first]
+puts puts 'Last day : ' + Day::NAMES[year.days.last]
+puts year.days.length
 
-# Raise an exception
-day = Day.new(0)
+puts "===== Year 2018 ====="
+year = Year.new(2018, 2)
+
+puts 'First day: ' + Day::NAMES[year.days.first]
+puts puts 'Last day : ' + Day::NAMES[year.days.last]
+puts year.days.length
